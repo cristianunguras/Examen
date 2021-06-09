@@ -1,2 +1,75 @@
 /* @FOOTER */
 /* ********** */
+
+footer{ background-color: map-get($colores,gris);}
+#footer{
+    padding-left:16px;
+    padding-right:16px;
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows:repeat(5,auto);
+    input{
+        width: 328px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+    input::placeholder{ padding-left: 20px;}
+    button{
+        width: 328px;
+        height: 50px;
+        background-color: map-get($colores,naranja);
+        padding: 16px;
+        border-radius: 25px;
+        font: $fontSize;
+        color:  map-get($colores,blanco);
+    }
+    .empresa{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .comunidad{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .contactar{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .redes{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        justify-self: center;
+    }
+    .redes li{
+        border: 1px solid #000000;
+        width: auto;
+        height: 50px;
+        padding: 16px;
+        text-align: center;
+        margin:8px;
+    }
+    .empresa li,
+    .comunidad li,
+    .contactar li {
+        margin:16px;
+    }
+    form{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        justify-self: center;      
+    }
+    .copyright{
+        grid-column: 1/3;
+        grid-row: 5/6;
+        justify-self: center;
+    }
+    ul{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h4{
+        font-size: $fontSize+2px;
+        font-weight: 900;
+    }
+}

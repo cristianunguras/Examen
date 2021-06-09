@@ -1,21 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="./css/main.css" />
-    </head>
-    <body>
-        <!-- HEADER -->
-        <header>
-        </header>
-        <!-- MAIN -->
-        <main>
-        </main>
-        <!-- FOOTER -->
-        <footer>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+        <div class="boton__compra"><a href="#">Comprar ya!</a></div>
+        <nav class="menu">
+          <div class="menu__inicio"><a"href="#">Inicio</a></div>
+          <div class="menu__productos"><a"href="#">Productos</a></div>
+          <div class="menu__servicios"><a"href="#">Servicios</a></div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+    <section class="camarafrente">
+        <h1 class="camarafrente__logo">LOGOTIPO</h1>
+        <picture>
+            <!-- Mobile First -->
+            <source
+                srcset="
+                    ./img/smartphone/camara_frente.jpg    1x,
+                    ./img/smartphone/camara_frente@2x.jpg 2x,
+                    ./img/smartphone/camara_frente@3x.jpg 3x
+                "
+                media="(min-width:320px) and (orientation:portrait)"
+            />
+            <!-- Desktop -->
+            <source
+                srcset="
+                    ./img/desktop/camara_frente.jpg    1x,
+                    ./img/desktop/camara_frente@2x.jpg 2x
+                "
+                media="(min-width:1000px)"
+            />
+            <img class="camarafrente__foto" src="" alt="foto camara frente" />
+        </picture>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a. Tellus integer accumsan aliquet arcu cras tristique. Semper proin porta adipiscing faucibus. Eu scelerisque ornare nunc, venenatis fringilla tincidunt consectetur.</p>
+        <div class="camarafrente__leermas"><a href="#">Leer mas</a></div>
+    </section>
+    <section class="camaraarriba">
+        <picture>
+            <!-- Mobile First -->
+            <source
+                srcset="
+                    ./img/smartphone/camara_arriba.jpg    1x,
+                    ./img/smartphone/camara_arriba@2x.jpg 2x,
+                    ./img/smartphone/camara_arriba@3x.jpg 3x
+                "
+                media="(min-width:320px) and (orientation:portrait)"
+            />
+            <!-- Desktop -->
+            <source
+                srcset="
+                    ./img/desktop/camara_arriba.jpg    1x,
+                    ./img/desktop/camara_arriba@2x.jpg 2x
+                "
+                media="(min-width:1000px)"
+            />
+            <img class="camarafrente__foto" src="" alt="foto camara arriba" />
+        </picture>
+        <article class="camaraarriba__opcion1">
+            <h4>Opcion 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.</p>
+        </article>
+        <article class="camaraarriba__opcion2">
+            <h4>Opcion 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.</p>
+        </article>
+        <article class="camaraarriba__opcion3">
+            <h4>Opcion 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.</p>
+        </article>
+        <article class="camaraarriba__opcion4">
+            <h4>Opcion 4</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a.</p>
+        </article>
+    </section>
+    <section class="lente">
+        <picture>
+            <!-- Mobile First -->
+            <source
+                srcset="
+                    ./img/smartphone/lente.jpg    1x,
+                    ./img/smartphone/lente@2x.jpg 2x,
+                    ./img/smartphone/lente@3x.jpg 3x
+                "
+                media="(min-width:320px) and (orientation:portrait)"
+            />
+            <!-- Desktop -->
+            <source
+                srcset="
+                    ./img/desktop/lente.jpg    1x,
+                    ./img/desktop/lente@2x.jpg 2x
+                "
+                media="(min-width:1000px)"
+            />
+            <img class="camarafrente__foto" src="" alt="foto lente" />
+        </picture>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst proin augue habitant nibh condimentum. Mi imperdiet enim aliquam enim proin tellus, fringilla et et. Ultrices lobortis in risus suspendisse eget rhoncus, mauris, lobortis. In tincidunt bibendum at in cursus. Eleifend faucibus turpis quis justo amet maecenas quis. Suscipit nibh sem est at. A lectus euismod metus, pretium id.
+            Leo ac elementum diam eget massa consectetur. Adipiscing maecenas sit gravida tincidunt posuere aenean semper auctor. Placerat sit quam mattis integer amet cursus. Turpis non magna risus libero, volutpat, et. Tortor elementum magna odio nulla. Id fermentum sapien eu nunc tristique id. Egestas purus venenatis interdum odio est ipsum faucibus maecenas. Ultricies sit erat ac nunc velit. Etiam neque blandit pharetra orci sed amet. Ultricies nec, vulputate suspendisse auctor risus massa vel, viverra pulvinar. Malesuada dignissim feugiat morbi sit dolor urna.
+            A et ipsum sollicitudin phasellus ultricies. Suscipit et et platea eget in faucibus. Vitae amet, malesuada erat praesent. Enim, lacinia enim placerat mi morbi dui sapien eget. Sapien convallis sed quis amet tellus in sed quam id.</p>
+    </section>
+    </main>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <ul class="empresa">
+            <h4>Empresa</h4>
+            <li>Quienes Somos</li>
+            <li>Historia</li>
+        </ul>
+        <ul class="comunidad">
+            <h4>Comunidad</h4>
+            <li>Eventos</li>
+            <li>Blog</li>
+            <li>Foros</li>
+        </ul>
+        <ul class="contactar">
+            <h4>Contactar</h4>
+            <li>Formulario</li>
+            <li>+34 666 66 66 66</li>
+        </ul>
+        <ul class="redes">
+            <h4>Redes</h4>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+        </ul>
+        <form action="#">
+            <input type="email" placeholder=" tu email" />
+            <button type="submit">Noticias</button>
+        </form>
+        <p class="copyright">Copyright 2021 - Examen Aliad Junio</p>
+    </footer>
+  </body>
 </html>

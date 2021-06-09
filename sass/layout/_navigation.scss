@@ -1,3 +1,53 @@
-/* @NAVEGACIÓN */
+/* @NAVEGACIÓN  */
 /* ********** */
+.camarafrente{
+    background-color: map-get($colores,marron);
+    margin-left:16px;
+    margin-right:16px;
+    p{ text-align: center;}
+    &__logo{
+        font-size: $fontSize*4;
+        font-weight: normal;
+        background-color: map-get($colores,blanco);
+        text-align: center;
+    }
+    &__foto{width: 100%;}
+    &__leermas{
+        justify-self:center;
+        width: 296px;
+        height: 50px;
+        background-color: map-get($colores,naranja);
+        padding:14.5px;
+        border-radius: 0px 50px 50px 0px;
+        margin-left:16px;
+        margin-right:16px;
+    }
+    a{
+        color:map-get($colores,blanco);
+    }
+}
+.camaraarriba{
+    &__opcion1,
+    &__opcion2,
+    &__opcion3,
+    &__opcion4{
+        margin-left:16px;
+        margin-right:16px;
+        font-size: $fontSize;
+    }
+    &__opcion1 h4,
+    &__opcion2 h4,
+    &__opcion3 h4,
+    &__opcion4 h4{
+        font-size: $fontSize+2px;
+        font-weight: 900;
+    }
+}
 
+.lente{
+    background-color: map-get($colores,beach);
+    p{
+    margin-left:16px;
+    margin-right:16px;
+    text-align: center;}
+}

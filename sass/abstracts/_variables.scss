@@ -1,2 +1,25 @@
 /* @VARIABLES */
 /* ********** */
+// TIPOGRAFIA
+$fontSize: 16px;
+$fontFamily: arial;
+
+// COLORES
+$colores: (
+    gris:  #C4C4C4,
+    beach: #F8F6EE,
+    marron:#FFE6D1,
+    naranja:#F2624A,
+    blanco:#FFFFFF
+);
+
+// TAMAÑOS
+$dispositivos: (
+    smartphone: 360px,
+    desktop: 1366px
+);
+
+$breakpoints: (
+    smartphone: 320px,
+    desktop: 1100px
+);
